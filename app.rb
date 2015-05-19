@@ -47,4 +47,8 @@ class Post < ActiveRecord::Base
 end
 
 Post.create
-puts "Posts: #{Post.pluck(:id)}"
+
+puts
+puts
+puts "Posts count should be 2 and is: #{Post.count}"
+puts "Post IDs should be 1 and 101 and are: #{Post.pluck(:id)}"
